@@ -28,8 +28,8 @@ https://www.youtube.com/playlist?list=LL
 3. **Go to the Console tab**  
    **Перейди на вкладку Console**
 
-4. **Paste the script below** and press Enter  
-   **Вставь скрипт ниже** и нажми Enter
+4. **Paste the script below** (1st then 2nd after loading videos) and press Enter  
+   **Вставь скрипт ниже** (1й, после загрузки видео 2й) и нажми Enter
 
 ---
 
@@ -44,12 +44,6 @@ https://www.youtube.com/playlist?list=LL
 ```javascript
 (async()=>{let v=document.querySelectorAll('ytd-playlist-video-renderer'),t=v.length,r=0,s=Date.now();for(let i=0;i<t;i++){try{v[i].querySelector('button[aria-label="Меню действий"]')?.click();await new Promise(r=>setTimeout(r,5));document.querySelectorAll('ytd-menu-service-item-renderer').forEach(n=>{if(n.innerText.includes('удалить')||n.innerText.includes('понравившихся')){n.click();r++;if(r%50===0)console.log(`🔥 ${r}/${t} (${Math.round(r/t*100)}%)`);}});}catch(e){}}console.log(`✅ Готово! Удалено ${r}/${t} за ${((Date.now()-s)/1e3).toFixed(0)}с`);})();
 ```
-
-### 3️⃣ Or everything in one / Или всё в одном
-```javascript
-(async()=>{let h=0;while(h!==document.documentElement.scrollHeight){h=document.documentElement.scrollHeight;window.scrollTo(0,h);await new Promise(r=>setTimeout(r,800));}let v=document.querySelectorAll('ytd-playlist-video-renderer'),t=v.length,r=0,s=Date.now();for(let i=0;i<t;i++){try{v[i].querySelector('button[aria-label="Меню действий"]')?.click();await new Promise(r=>setTimeout(r,5));document.querySelectorAll('ytd-menu-service-item-renderer').forEach(n=>{if(n.innerText.includes('удалить')||n.innerText.includes('понравившихся')){n.click();r++;if(r%50===0)console.log(`🔥 ${r}/${t} (${Math.round(r/t*100)}%)`);}});}catch(e){}}console.log(`✅ Готово! Удалено ${r}/${t} за ${((Date.now()-s)/1e3).toFixed(0)}с`);})();
-```
-
 ---
 
 ## ⚡ Performance / Производительность

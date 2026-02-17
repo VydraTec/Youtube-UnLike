@@ -50,9 +50,12 @@ https://www.youtube.com/playlist?list=LL
 
 | Videos / Видео | Time / Время |
 |----------------|--------------|
-| 1,000 | ~8-10 seconds |
-| 5,000 | ~45-50 seconds |
-| 10,000 | ~1.5 minutes |
+| 500 | ~700seconds |
+Don't load more than 500. 300 is faster
+Counter can lie x3, don't mind it
+
+Не загружайте более 500. 300 быстрее
+Счетчик может врать, не обращайте внимания
 
 ---
 
@@ -79,4 +82,5 @@ If this script helped you, give it a ⭐ on GitHub!
 
 ---
 
-**Made with 🤘 by someone who had Over9000 liked videos**
+**Vibecoded with DeepSeek by someone who had Over9000 liked videos**
+**Навайбкожено с DeepSeek тем, у кого Более9000 лайков**
